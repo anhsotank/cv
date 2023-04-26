@@ -1,0 +1,178 @@
+:root{
+    --color-White: #fff;
+    --color-black:#333333;
+    }
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');    
+ *{
+        box-sizing: inherit;
+}
+    
+  html{
+        font-size: 62.5%;
+        line-height: 1.6rem;
+        box-sizing: border-box;
+        background-color: rgb(3, 3, 3);
+        
+}
+body{
+    margin: 0;
+}
+#container{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 20px;
+}
+.header{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style:preserve-3d ;
+}
+.bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(image/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(-10px) scale(1.);
+    
+}
+.content{
+     
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffff;
+    font-family: 'Lobster', cursive;
+    color: transparent;
+    font-size: 5rem;
+    text-shadow: 1px 1px 1px #1f485d;
+    transform: translateZ(11px);
+    text-shadow: rgb(241, 116, 116) -4px 0 3px,rgb(102, 195, 195) 4px 0 3px;
+}
+.astronaut{
+    position: absolute;
+    width: 70px;
+    height: 100px;
+    background-image: url(image/phihanhgia.png);
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(15px) translateX(-100%) translateY(50px);
+
+}
+.earth{
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    background-image: url(image/traidat.png);
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(2px) translateX(240%) translateY(-200%) scale(3.0);
+    filter:  drop-shadow(-4px 3px 2px #6b94d1);
+   
+
+}
+.static{
+    height: 1200px;
+    background-image: linear-gradient(
+        to bottom,
+        transparent,
+        #404d89 50px
+    );
+    transform: translateY(-50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    font-size: x-large;
+    color: #fff;
+    position: relative;
+}
+.CV{
+    position: absolute;
+    top: 100px;
+    border-radius: 10px;
+    background-color: #333333;
+    width: 700px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-column-gap: 10px;
+}
+.profile1{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: translateY(-100px);
+
+}
+.profile1_image{
+    transform: translateY(60px);
+    width: 200px;
+    height: 200px;
+    background-image: url(image/anh.jpg) ;
+
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+.profile1_PersonalDetails{
+    position: relative;
+    background-color: #181a1b;
+    width: 280px;
+    height: 900px;
+    border-radius: 4px;
+}
+.profile1_PersonalDetails h1{
+    font-size: large;
+    text-align: center;
+    margin-top:60px ;
+}
+.profile1_PersonalDetails_content{
+    
+    margin-top: 15px;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile1_PersonalDetails .title{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#404d89d1 ;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 4px;
+
+}
+.profile1_PersonalDetails ul{
+    list-style: none;
+    width: 200px;
+    height: 110px;
+    padding: 0;
+}
+.profile1_PersonalDetails ul li{
+    width: 220px;
+    height: 40px;
+    font-size: small;
+
+}
+.profile2{
+    
+    height: 980px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #181a1b;
+    border-radius: 4px;
+    transform: translateY(20px);
+}
